@@ -11,14 +11,14 @@ Verwendet wurde der The Wildfire Dataset von Kaggle:
 Der Datensatz enthält zwei Ordner:
 
 "train" mit Unterordnern "Feuer"und "Kein Feuer", und "test" mit derselben Struktur:
-
+```
 ├── train/
 │   ├── Feuer/
 │   └── Kein Feuer/
 ├── test/
 │   ├── Feuer/
 │   └── Kein Feuer/
-
+```
 
 ## 3. Python-Bibliotheken
 
