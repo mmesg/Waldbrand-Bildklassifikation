@@ -12,14 +12,13 @@ Der Datensatz enthält zwei Ordner:
 
 "train" mit Unterordnern "Feuer"und "Kein Feuer", und "test" mit derselben Struktur:
 
-'''
 ├── train/
 │   ├── Feuer/
 │   └── Kein Feuer/
 ├── test/
 │   ├── Feuer/
 │   └── Kein Feuer/
-'''
+
 
 ## 3. Python-Bibliotheken
 
@@ -43,7 +42,7 @@ Spiegelung
    
 Das vortrainierte MobileNet-Modell (ImageNet-Gewichte) wurde als Feature-Extraktor eingesetzt. Die Klassifikationsschicht wurde entfernt und durch eine neue Schicht ersetzt:
 
-'''
+'''python
 keras.layers.Dense(1, activation='sigmoid')
 '''
 
@@ -54,7 +53,7 @@ keras.layers.Dense(1, activation='sigmoid')
 - Phase 2: Das gesamte Modell wurde feingetunt (unfreezing und weiteres Training).
 
 - Leistungsmetriken: "Accuracy", "Loss"
-- 
+  
 - Weitere Methoden: "EarlyStopping" und "Learning Rate Reduction" als Callback-Mechanismen
 
 ## 6. Datenvisualisierung
