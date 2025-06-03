@@ -28,7 +28,7 @@ Der Datensatz enthält zwei Ordner:
 
 Das Modell besteht aus zwei Hauptkomponenten:
 
-1) Data Augmentation Layer
+1) *Data Augmentation Layer*
    
    Zur Vermeidung von Overfitting wurden augmentierte Bilder erzeugt durch:
 
@@ -38,7 +38,7 @@ Das Modell besteht aus zwei Hauptkomponenten:
 
    Spiegelung
 
-2) Transfer Learning mit MobileNet
+2) *Transfer Learning mit MobileNet*
    
    Das vortrainierte MobileNet-Modell (ImageNet-Gewichte) wurde als Feature-Extraktor eingesetzt. Die Klassifikationsschicht wurde entfernt und durch eine neue Schicht ersetzt:
 
