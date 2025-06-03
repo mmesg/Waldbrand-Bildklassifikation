@@ -30,17 +30,17 @@ Das Modell besteht aus zwei Hauptkomponenten:
 
 1) Data Augmentation Layer
    
-Zur Vermeidung von Overfitting wurden augmentierte Bilder erzeugt durch:
+   Zur Vermeidung von Overfitting wurden augmentierte Bilder erzeugt durch:
 
-Rotation
+   Rotation
 
-Translation (Verschiebung)
+   Translation (Verschiebung)
 
-Spiegelung
+   Spiegelung
 
 2) Transfer Learning mit MobileNet
    
-Das vortrainierte MobileNet-Modell (ImageNet-Gewichte) wurde als Feature-Extraktor eingesetzt. Die Klassifikationsschicht wurde entfernt und durch eine neue Schicht ersetzt:
+   Das vortrainierte MobileNet-Modell (ImageNet-Gewichte) wurde als Feature-Extraktor eingesetzt. Die Klassifikationsschicht wurde entfernt und durch eine neue Schicht ersetzt:
 
 ```python
 keras.layers.Dense(1, activation='sigmoid')
