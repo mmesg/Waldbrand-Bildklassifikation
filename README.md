@@ -42,9 +42,9 @@ Spiegelung
    
 Das vortrainierte MobileNet-Modell (ImageNet-Gewichte) wurde als Feature-Extraktor eingesetzt. Die Klassifikationsschicht wurde entfernt und durch eine neue Schicht ersetzt:
 
-'''python
+```python
 keras.layers.Dense(1, activation='sigmoid')
-'''
+```
 
 ## 5. Training
 
